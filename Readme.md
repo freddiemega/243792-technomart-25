@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/25/user/243792).
-* Наставник: [Юлия Буруяна](https://up.htmlacademy.ru/htmlcss/25/user/1016471).
+* Студент: [Юрий](https://up.htmlacademy.ru/htmlcss/25/user/243792).
+* Наставник: [Дмитрий Рябинин](https://up.htmlacademy.ru/htmlcss/25/user/63289).
 
 ---
 
