@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="На главную">
           <img src="img/logo.svg" width="220" height="51" alt="Логотип Техномарт">
         </a>
         <span class="search">Поиск</span>
@@ -19,14 +19,14 @@
       <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       <span class="post-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       <ul class="user-navigation">
-            <li class="login-done"><a href="user.html">Равшан Джамшутович</a></li>
-            <li class="logout"><a href="logout.html"></a></li>
+            <li class="login-done"><a href="user.html" aria-label="Панель пользователя">Равшан Джамшутович</a></li>
+            <li class="logout"><a href="logout.html" aria-label="Выйти из аккаунта"></a></li>
         </ul>
         <span class="user-menu">
           <a class="user-menu-orders" href="orders.html">Мои заказы</a>
           <a class="user-menu-panel" href="panel.html">Личный кабинет</a>
         </span>
-        <nav class="main-navigation">
+        <nav class="main-navigation" aria-label="Основное меню">
             <ul class="site-navigation">
               <li><a href="">Главная</a></li>
               <li><a href="company.html">Компания</a></li>
@@ -40,33 +40,65 @@
       </header>
       <main class="container">
         <ul class="breadcrumbs">
-            <li class="index-breadcrumb"><a href="index.html" title="Главная"></a></li>
+            <li class="index-breadcrumb"><a href="index.html" title="На главную" aria-label="На главную"></a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="catalog.html">Инструмент</a></li>
-            <li class="breadcrumbs-current">Перформаторы</li>
+            <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
         <h1 class="page-title">Перфораторы</h1>
         <section class="filters">
           <h2 class="visually-hidden">Производители</h2>
-            <p class="filters-title">Фильтр</p>
-            <form action="filters.php">
-              <!-- красный фон не нужно размечать на этапе второго задания -->
-              <!-- Здесь будет форма цена и два поля -->
-          <fieldset class="menu-manufacturers">
-            <legend class="menu-manufacturers-title">Производители</legend>
-            <input type="checkbox"><label>Bosch</label>
-                <input type="checkbox"><label>Интерскол</label>
-                <input type="checkbox"><label>Makita</label>
-                <input type="checkbox"><label>Dewalt</label>
-                <input type="checkbox"><label>Hitachi</label>
-              </fieldset>
-              <fieldset class="menu-manufacturers">
-            <legend class="menu-manufacturers-title">Питание</legend>
-            <input type="radio"><label>Аккумуляторные</label>
-                <input type="radio"><label>Сетевые</label>
-              </fieldset>
-              <button class="button show-items" type="submit">Показать</button>
-            </form>
+          <p class="filters-title">Фильтр</p>
+          <form action="filters.php">
+            <!-- красный фон не нужно размечать на этапе второго задания -->
+            <!-- Здесь будет форма цена и два поля -->
+            <fieldset class="menu-manufacturers">
+              <legend class="menu-manufacturers-title">Производители</legend>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Bosch">Bosch
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Интерскол">Интерскол
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Makita">Makita
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Dewalt">Dewalt
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Hitachi">Hitachi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="menu-manufacturers">
+              <legend class="menu-manufacturers-title">Питание</legend>
+              <ul>
+                <li class="filter-option-supply">
+                  <label>
+                    <input class="filter-input filter-input-radio" type="radio" name="Аккумуляторные">Аккумуляторные
+                  </label>
+                </li>
+                <li class="filter-option-supply">
+                  <label>
+                    <input class="filter-input filter-input-radio" type="radio" name="Сетевые">Сетевые
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button show-items" type="submit">Показать</button>
+          </form>
         </section>
         <section class="catalog">
           <div class="sort">
@@ -146,7 +178,20 @@
             <!-- блок пара слов о перфораторах -->
             <!-- красный фон не нужно размечать на этапе второго задания -->
         </section>
-
+        <section class="modal modal-item-added">
+          <h2>
+            Товар добавлен в корзину!
+          </h2>
+          <a class="button-item-added" href="make-order.html">
+            Оформить заказ
+          </a>
+          <a class="button-continue" href="catalog.html">
+            Продолжить покупки
+          </a>
+          <button class="modal-close" type="button">
+            Закрыть
+          </button>
+        </section>
       </main>
       <footer>
         <section class="footer-information">
