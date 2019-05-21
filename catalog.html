@@ -49,7 +49,7 @@
         <section class="filters">
           <h2 class="visually-hidden">Производители</h2>
           <p class="filters-title">Фильтр</p>
-          <form action="filters.php">
+          <form action="https://echo.htmlacademy.ru">
             <!-- красный фон не нужно размечать на этапе второго задания -->
             <!-- Здесь будет форма цена и два поля -->
             <fieldset class="menu-manufacturers">
@@ -87,12 +87,12 @@
               <ul>
                 <li class="filter-option-supply">
                   <label>
-                    <input class="filter-input filter-input-radio" type="radio" name="Аккумуляторные">Аккумуляторные
+                    <input class="filter-input filter-input-radio" type="radio" name="supply" value="rechargeable">Аккумуляторные
                   </label>
                 </li>
                 <li class="filter-option-supply">
                   <label>
-                    <input class="filter-input filter-input-radio" type="radio" name="Сетевые">Сетевые
+                    <input class="filter-input filter-input-radio" type="radio" name="supply" value="network">Сетевые
                   </label>
                 </li>
               </ul>
@@ -178,20 +178,7 @@
             <!-- блок пара слов о перфораторах -->
             <!-- красный фон не нужно размечать на этапе второго задания -->
         </section>
-        <section class="modal modal-item-added">
-          <h2>
-            Товар добавлен в корзину!
-          </h2>
-          <a class="button-item-added" href="make-order.html">
-            Оформить заказ
-          </a>
-          <a class="button-continue" href="catalog.html">
-            Продолжить покупки
-          </a>
-          <button class="modal-close" type="button">
-            Закрыть
-          </button>
-        </section>
+
       </main>
       <footer>
         <section class="footer-information">
@@ -248,5 +235,20 @@
           </p>
         </section>
       </footer>
+      <!-- pop up -->
+      <section class="modal modal-item-added">
+        <h2>
+          Товар добавлен в корзину!
+        </h2>
+        <a class="button-item-added" href="make-order.html">
+          Оформить заказ
+        </a>
+        <button class="button-continue">
+          Продолжить покупки
+        </button>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+      </section>
   </body>
 </html>
