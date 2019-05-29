@@ -1,0 +1,122 @@
+.main-header {
+
+  background-color: transparent;
+  outline: 2px solid red;
+
+}
+.header-block-1,
+.header-block-2 {
+  outline: 2px solid yellow;
+}
+.header-container {
+  outline: 2px solid red;
+}
+.info-container,
+.main-navigation {
+  outline: 2px solid red;
+}
+.main-header-logo,
+.search,
+.helper-navigation {
+  outline: 2px solid green;
+}
+.helper-navigation li {
+  outline: 2px solid yellow;
+}
+.main-title,
+.phone-container,
+.user-navigation {
+  outline: 2px solid yellow;
+}
+.user-navigation li {
+  outline: 2px solid green;
+}
+.site-navigation {
+  outline: 2px solid yellow;
+}
+.site-navigation li {
+  outline: 2px solid red;
+}
+.company-section-container {
+  outline: 2px solid red;
+}
+.main-information,
+.main-contacts {
+  outline: 2px solid yellow;
+}
+.main-subtitle,
+.main-information p,
+.list-company,
+.button {
+  outline: 2px solid green;
+}
+.footer-block-1,
+.footer-block-2 {
+  outline: 2px solid yellow;
+}
+.footer-information,
+.footer-copyright {
+  outline: 2px solid red;
+  background-color: transparent;
+}
+.footer-information img,
+.footer-information p,
+.footer-navigation,
+.footer-links {
+  outline: 2px solid green;
+}
+.footer-navigation li {
+  outline: 2px solid yellow;
+}
+.footer-links li {
+  outline: 2px solid yellow;
+}
+.copyright,
+.footer-social,
+.footer-feedback,
+.footer-developed {
+  outline: 2px solid green;
+}
+.user-container {
+  outline: 2px solid yellow;
+}
+.user-menu {
+  outline: 2px solid red;
+}
+.user-menu li {
+  outline: 2px solid green;
+}
+.user-navigation-login {
+  outline: 2px solid red;
+}
+.user-navigation-login li {
+  outline: 2px solid green;
+}
+.inner-main {
+  outline: 2px solid yellow;
+}
+.breadcrumbs {
+  outline: 2px solid red;
+}
+.page-title {
+  outline: 2px solid red;
+  //background-color: transparent;
+}
+.calalog-container {
+  outline: 2px solid red;
+}
+.filters,
+.catalog {
+  outline: 2px solid yellow;
+}
+.sort,
+.catalog-list,
+.pagination {
+  outline: 2px solid green;
+}
+.catalog-list li {
+  outline: 2px solid red;
+}
+.catalog-information {
+  outline: 2px solid red;
+}

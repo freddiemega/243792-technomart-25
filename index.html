@@ -3,30 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт - Главная</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+<!--
+    <link href="css/outline.css" rel="stylesheet">
+-->
   </head>
   <body>
-      <header class="main-header">
-        <div class="main-header-logo">
-          <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+    <header class="main-header">
+      <div class="header-block-1">
+        <div class="header-container">
+          <div class="main-header-logo">
+            <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+          </div>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input name="search-field" type="search" placeholder="Поиск:">
+          </form>
+          <ul class="helper-navigation">
+            <li><a href="bookmarks.html">Закладки</a></li>
+            <li><a href="basket.html">Корзина</a></li>
+            <li><a href="make-order.html">Оформить заказ</a></li>
+          </ul>
         </div>
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input name="search-field" type="search" placeholder="Поиск:">
-        </form>
-        <ul class="helper-navigation">
-          <li class="bookmarks"><a href="bookmarks.html">Закладки</a></li>
-          <li class="basket"><a href="basket.html">Корзина</a></li>
-          <li class="make-order"><a href="make-order.html">Оформить заказ</a></li>
-        </ul>
-        <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <span class="post-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        <ul class="user-navigation">
-          <li class="login-link"><a href="">Войти</a></li>
-          <li class="reg-link"><a href="">Регистрация</a></li>
-        </ul>
+      </div>
+      <div class="header-block-2">
+        <div class="info-container">
+          <h1 class="main-title">Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</h1>
+          <div class="phone-container">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          </div>
+          <ul class="user-navigation">
+            <li><a href="">Войти</a></li>
+            <li><a href="">Регистрация</a></li>
+          </ul>
+        </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a href="">Главная</a></li>
@@ -38,11 +50,17 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-      </header>
-      <main class="container">
+      </div>
+    </header>
 
-        <!-- красный фон не нужно размечать на этапе второго задания -->
 
+    <main class="container">
+      <!-- красный фон не нужно размечать на этапе шестого задания -->
+      <div style="height: 1995px;">
+
+      </div>
+
+      <div class="company-section-container">
         <section class="main-information">
           <h2 class="main-subtitle">КОМПАНИЯ «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -67,19 +85,17 @@
           </span>
           <a class="button" href="mailto:temp@temp.ru">Заблудились? Напишите нам!</a>
         </section>
-
-      </main>
-      <footer>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-block-1">
         <section class="footer-information">
           <h2 class="visually-hidden">
             Адрес, навигация
           </h2>
-          <!-- Убрал ссылку на нижний лого -->
-          <img src="img/footer-logo.svg" width="137" height="22" alt="Логотип Техномарт">
-          <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 666-02-66
-          </p>
+          <div class="footer-logo-block">
+            <img src="img/footer-logo.svg" width="137" height="22" alt="Логотип Техномарт">
+          </div>
           <ul class="footer-navigation">
             <li><a href="company.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
@@ -87,6 +103,10 @@
             <li><a href="delivery.html">Доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
+          <p>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 666-02-66
+          </p>
           <ul class="footer-links">
             <li><a href="materials.html">Материалы</a></li>
             <li><a href="technics.html">Техника</a></li>
@@ -94,6 +114,8 @@
             <li><a href="offers.html">Спецпредложения</a></li>
           </ul>
         </section>
+      </div>
+      <div class="footer-block-2">
         <section class="footer-copyright">
           <h2 class="visually-hidden">
             Информация
@@ -102,62 +124,23 @@
             © 2010–2019 Компания «Техномарт»<br>
           Все права защищены
           </p>
-          <div class="footer-social">
-            <ul>
-              <li><a class="social-button" href="#">Вконтакте</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
-            </ul>
-          </div>
-          <p class="footer-feedback">
-            Обратная связь:<br>
-            <a href="mailto:">
-              mail@htmlacademy.ru
-            </a>
-          </p>
-          <p class="footer-feedback">
+          <ul class="footer-social">
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+          <div class="footer-feedback-container">
+            <p class="footer-feedback">
+                Обратная связь:<br>
+              <a href="mailto:">mail@htmlacademy.ru</a>
+            </p>
+            <p class="footer-developed">
               Разработано —<br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              htmlacademy.ru
-            </a>
-          </p>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </section>
-      </footer>
-      <!-- pop up -->
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">
-          Как до нас добраться
-        </h2>
-        <img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <button class="modal-close" type="button">
-          Закрыть
-        </button>
-      </section>
-      <!-- pop up -->
-      <section class="modal modal-login">
-        <h2 class="visually-hidden">
-          Написать нам сообщение
-        </h2>
-        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="write-form-name" for="write-name">Ваше имя:</label>
-            <input class="write-name-input" id="write-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label class="write-form-email" for="write-email">Ваш email:</label>
-            <input class="write-email-input" id="write-email" type="text" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label class="write-form-text" for="write-text">Текст письма:</label>
-            <textarea class="write-textarea" id="write-text" name="write-text" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button button-write-form" type="submit">
-            Отправить
-          </button>
-        </form>
-        <button class="modal-close" type="button">
-          Закрыть
-        </button>
-      </section>
+      </div>
+    </footer>
   </body>
 </html>
