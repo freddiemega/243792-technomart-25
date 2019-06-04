@@ -15,14 +15,19 @@
       <div class="header-block-1">
         <div class="header-container">
           <div class="main-header-logo">
-            <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+            <a href="index.html">
+              <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+            </a>
           </div>
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <input name="search-field" type="search" placeholder="Поиск:">
+            <label for="search-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+            </label>
+            <input name="search-field" id="search-label" type="search" placeholder="Поиск:">
           </form>
           <ul class="helper-navigation">
-            <li><a href="bookmarks.html">Закладки</a></li>
-            <li><a href="basket.html">Корзина</a></li>
+            <li><a href="bookmarks.html">Закладки: 0</a></li>
+            <li><a href="basket.html">Корзина: 0</a></li>
             <li><a href="make-order.html">Оформить заказ</a></li>
           </ul>
         </div>
@@ -35,19 +40,24 @@
             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
           <ul class="user-navigation">
-            <li><a href="">Войти</a></li>
-            <li><a href="">Регистрация</a></li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                Войти
+              </a>
+            </li>
+            <li><a href="#">Регистрация</a></li>
           </ul>
         </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a href="">Главная</a></li>
-            <li><a href="company.html">Компания</a></li>
+            <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="offers.html">Спецпредложения</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -125,9 +135,9 @@
           Все права защищены
           </p>
           <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
           <div class="footer-feedback-container">
             <p class="footer-feedback">
