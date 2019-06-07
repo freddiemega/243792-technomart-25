@@ -138,7 +138,10 @@ input[type="search"]::placeholder {
 input[type="search"]::-webkit-input-placeholder {
   color: #ffffff;
 }
-
+input[type="search"]::-moz-placeholder {
+   color: #fff;
+   opacity: 1;
+}
 input[type="search"] {
   color: #ffffff;
   background-color: #293449;
