@@ -1,0 +1,30 @@
+      var buyLinkAll = document.querySelectorAll(".buy");
+
+      var buyPopup = document.querySelector(".modal-cart");
+      var buyClose = buyPopup.querySelector(".modal-close");
+
+      var buyLinkAll = [].slice.call(buyLinkAll);
+
+      for (var i = 0, len = buyLinkAll.length; i < len; i++) {
+
+      buyLinkAll[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+
+      }
+
+
+      buyClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.remove("modal-show");
+    });
+
+      window.addEventListener("keydown", function (evt) {
+      //evt.preventDefault();
+      if (evt.keyCode === 27) {
+        if (buyPopup.classList.contains("modal-show")) {
+        buyPopup.classList.remove("modal-show");
+        }
+      }
+    });

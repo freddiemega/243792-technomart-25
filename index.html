@@ -68,34 +68,34 @@
             <div class="flag flag-new">новинка</div>
             <h3 class="offer-title">Материалы</h3>
             <a class="button offer-button" href="#">На любой вкус</a>
-            <div class="item-materials-icon"></div>
+            <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
           </div>
           <div class="offer offer-item item-tools">
             <div class="flag">новинка</div>
             <h3 class="offer-title">Инструмент</h3>
             <a class="button offer-button" href="#">На все случаи</a>
-            <div class="item-tools-icon"></div>
+            <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
           </div>
           <div class="offer offer-item item-technic">
             <div class="flag">новинка</div>
             <h3 class="offer-title">Техника</h3>
             <a class="button offer-button" href="#">Для стройки</a>
-            <div class="item-technic-icon"></div>
+            <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
           </div>
           <div class="offer offer-slider">
-            <button class="slyder-arrow-left" type="button"></button>
-            <button class="slyder-arrow-right" type="button"></button>
-            <button class="slyder-point" type="button"></button>
-            <button class="slyder-point-selected" type="button"></button>
-            <div class="slyder-container-1">
-              <h3 class="slyder-title">Дрели</h3>
-              <p class="slyder-text">Соседям на радость!</p>
-              <a class="button slyder-button" href="catalog.html">Открыть каталог</a>
+            <button class="slider-arrow-left" type="button"></button>
+            <button class="slider-arrow-right" type="button"></button>
+            <button class="point-left point-selected-left" type="button"></button>
+            <button class="point-right slider-point-right" type="button"></button>
+            <div class="slider-block slider-container-1 slider-visible">
+              <h3 class="slider-title">Дрели</h3>
+              <p class="slider-text">Соседям на радость!</p>
+              <a class="button slider-button" href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="slyder-container-2">
-              <h3 class="slyder-title">Перфораторы</h3>
-              <p class="slyder-text">Настоящие мужские игрушки</p>
-              <a class="button slyder-button" href="catalog.html">Открыть каталог</a>
+            <div class="slider-block slider-container-2">
+              <h3 class="slider-title">Перфораторы</h3>
+              <p class="slider-text">Настоящие мужские игрушки</p>
+              <a class="button slider-button" href="catalog.html">Открыть каталог</a>
             </div>
           </div>
           <div class=" offer-item-2">
@@ -103,13 +103,13 @@
               <div class="flag">новинка</div>
               <h3 class="offer-title">Скидки 50%</h3>
               <a class="button offer-button" href="#">На 350 товаров</a>
-              <div class="item-sale-icon"></div>
+              <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
             </div>
             <div class="offer offer-item item-delivery">
               <div class="flag">новинка</div>
               <h3 class="offer-title">Доставка</h3>
               <a class="button offer-button" href="#">Бесплатно</a>
-              <div class="item-delivery-icon"></div>
+              <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
             </div>
           </div>
         </div>
@@ -154,7 +154,7 @@
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <div class="image">
-              <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <p class="item-price-old">30500 Р.</p>
             <p class="item-price-now">25500 Р.</p>
@@ -197,9 +197,9 @@
             <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <div class="menu-block">
-            <a class="button-service button-service-current" href="#">Доставка</a>
-            <a class="button-service" href="#">Гарантия</a>
-            <a class="button-service" href="#">Кредит</a>
+            <button class="button-service button-delivery button-service-current">Доставка</button>
+            <button class="button-service button-warranty">Гарантия</button>
+            <button class="button-service button-credit">Кредит</button>
           </div>
           <div class="service-slider-block slider-block-delivery slider-block-active">
             <h2 class="service-slider-subtitle">Доставка</h2>
@@ -214,7 +214,7 @@
             <h2 class="service-slider-subtitle">Гарантия</h2>
             <p class="service-slider-text">
               Если купленный у нас товар поломается или заискрит,<br>
-              а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+              а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
@@ -245,7 +245,7 @@
         <section class="main-contacts">
           <h2 class="main-subtitle">Контакты</h2>
           <p>
-            Вы можете забрать товар сами, заехав в наш офис:
+            Вы можете забрать товар сами,<br> заехав в наш офис:
           </p>
           <div class="map-contacts">
             <a class="contacts-button-map" href="#">
@@ -274,7 +274,7 @@
           </ul>
           <p>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 666-02-66
+            +7 (812) 555-05-55
           </p>
           <ul class="footer-links">
             <li><a href="#">Материалы</a></li>
@@ -334,7 +334,8 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p><img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871646351!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560897476589!5m2!1sru!2sru" width="940" height="446" style="border:0" allowfullscreen></iframe>
+      <p><img src="img/map-google.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
@@ -347,128 +348,6 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-  <script>
-    var link = document.querySelector(".write-us-link");
-
-    var popup = document.querySelector(".modal-subs");
-    var close = popup.querySelector(".modal-close");
-
-    var username = popup.querySelector("[name=user-name]");
-    var form = popup.querySelector("form");
-    var useremail = popup.querySelector("[name=user-email]");
-    var usertext = popup.querySelector("[name=user-text]");
-
-    var isStorageSupport = true;
-    var storage = "";
-
-    try {
-      storage = localStorage.getItem("username");
-      storageemail = localStorage.getItem("useremail");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-
-    if (storage && storageemail) {
-      username.value = storage;
-      useremail.value = storageemail;
-      usertext.focus();
-    } else {
-      username.focus();
-    }
-
-  });
-
-    close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-
-    form.addEventListener("submit", function (evt) {
-    if (!username.value || !useremail.value || !usertext.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-      console.log("Нужно заполнить все поля формы");
-    } else {
-      if (isStorageSupport) {
-      localStorage.setItem("username", username.value);
-      localStorage.setItem("useremail", useremail.value);
-    }
-    }
-  });
-
-    window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
-
-  var mapLink = document.querySelector(".contacts-button-map");
-
-  var mapPopup = document.querySelector(".modal-map");
-  var mapClose = mapPopup.querySelector(".modal-close");
-
-  mapLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("modal-show");
-  });
-
-  mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
-      }
-    }
-  });
-
-
-
-
-  var buyLinkAll = document.querySelectorAll(".buy");
-
-  var buyPopup = document.querySelector(".modal-cart");
-  var buyClose = buyPopup.querySelector(".modal-close");
-
-  var buyLinkAll = [].slice.call(buyLinkAll);
-
-  for (var i = 0, len = buyLinkAll.length; i < len; i++) {
-
-    buyLinkAll[i].addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.add("modal-show");
-  });
-
-    }
-
-    buyClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.remove("modal-show");
-  });
-
-    window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-      if (evt.keyCode === 27) {
-        if (buyPopup.classList.contains("modal-show")) {
-        buyPopup.classList.remove("modal-show");
-      }
-    }
-  });
-  </script>
+  <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

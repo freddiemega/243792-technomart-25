@@ -103,11 +103,11 @@
               </div>
             </fieldset>
             <hr>
-            <fieldset>
-              <legend class="menu-manufacturers-title">Производители</legend>
+            <fieldset class="menu-manufacturers">
+              <legend class="menu-manufacturers-title">Производители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-bosch" type="checkbox" name="Bosch">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-bosch" type="checkbox" name="Bosch" checked="">
                   <label for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
@@ -115,7 +115,7 @@
                   <label for="filter-interskol">Интерскол</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-makita" type="checkbox" name="Makita" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-makita" type="checkbox" name="Makita" checked="" disabled="">
                   <label for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-option">
@@ -130,10 +130,10 @@
             </fieldset>
             <hr>
             <fieldset>
-              <legend class="menu-manufacturers-title">Питание</legend>
+              <legend class="menu-manufacturers-title">Питание:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" id="filter-recharchable" type="radio" name="supply" value="rechargeable">
+                  <input class="visually-hidden filter-input filter-input-radio" id="filter-recharchable" type="radio" name="supply" value="rechargeable" checked="">
                   <label for="filter-recharchable">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
@@ -295,7 +295,7 @@
       </div>
       <section class="catalog-information">
         <div class="catalog-information-container">
-          <h2 class="main-service-subtitle">Пара слов о перфораторах</h2>
+          <h2 class="main-service-subtitle catalog-subtitle">Пара слов о перфораторах</h2>
           <p class="information-text">
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -367,37 +367,7 @@
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script>
-      var buyLinkAll = document.querySelectorAll(".buy");
 
-      var buyPopup = document.querySelector(".modal-cart");
-      var buyClose = buyPopup.querySelector(".modal-close");
-
-      var buyLinkAll = [].slice.call(buyLinkAll);
-
-      for (var i = 0, len = buyLinkAll.length; i < len; i++) {
-
-      buyLinkAll[i].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-
-      }
-
-
-      buyClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.remove("modal-show");
-    });
-
-      window.addEventListener("keydown", function (evt) {
-      evt.preventDefault();
-      if (evt.keyCode === 27) {
-        if (buyPopup.classList.contains("modal-show")) {
-        buyPopup.classList.remove("modal-show");
-        }
-      }
-    });
-    </script>
+  <script type="text/javascript" src="js/scripts-catalog.js"></script>
   </body>
 </html>
