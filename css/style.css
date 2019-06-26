@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -25,7 +25,7 @@ a {
   padding: 10px 40px;
   border-radius: 2px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -508,6 +508,9 @@ input[type="search"]:focus {
 .login-link-url:active span {
   opacity: 0.3;
 }
+.logout-link-url {
+  outline: none;
+}
 .logout-link-url:hover path,
 .logout-link-url:focus path {
   fill: #32425c;
@@ -743,6 +746,7 @@ background-color: #ffc047;
   border: none;
   cursor: pointer;
 }
+
 .slider-point-left {
   position: absolute;
   margin: 0;
@@ -770,6 +774,12 @@ background-color: #ffc047;
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;
+}
+.slider-arrow-left:focus,
+.slider-arrow-right:focus,
+.slider-point-left:focus,
+.slider-point-right:focus {
+  outline: 1px dotted white;
 }
 .point-selected-left {
   position: absolute;
@@ -807,6 +817,7 @@ background-color: #ffc047;
   margin: 0;
   padding: 0;
 
+  background-color: #675c53;
   background-image: url("../img/slyder-1.jpg");
   background-repeat: no-repeat;
 }
@@ -817,6 +828,7 @@ background-color: #ffc047;
   margin: 0;
   padding: 0;
 
+  background-color: #675c53;
   background-image: url("../img/slyder-2.jpg");
   background-repeat: no-repeat;
 }
@@ -923,7 +935,7 @@ background-color: #ffc047;
 }
 .main-information p,
 .main-contacts p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.1px;
@@ -1052,7 +1064,6 @@ background-color: #ffc047;
 
   display: flex;
 
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
 
@@ -1169,7 +1180,9 @@ background-color: #ffc047;
 .footer-copyright ul {
   list-style-type: none;
 }
-
+.footer-social li {
+  margin-right: 2px;
+}
 
 .inner-main {
   width: 100%;
@@ -1192,7 +1205,7 @@ background-color: #ffc047;
 .breadcrumbs li {
   position: relative;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -1239,7 +1252,7 @@ background-color: #ffc047;
 .filter-title {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
@@ -1303,7 +1316,7 @@ background-color: #ffc047;
   box-sizing: border-box;
   width: 95px;
   padding: 10px 10px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -1316,7 +1329,7 @@ background-color: #ffc047;
   max-height: 38px;
 }
 .range-inputs-container p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1341,12 +1354,12 @@ background-color: #ffc047;
 .filter legend {
   font-size: 17px;
   line-height: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   min-height: 55px;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-bottom: 13px;
 }
 .filter fieldset {
   padding: 0;
@@ -1365,17 +1378,22 @@ background-color: #ffc047;
   margin: 0;
 
   list-style: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 21px;
   text-transform: uppercase;
 }
+
+.filter-input:focus + label  {
+  outline: 1px dotted blue;
+}
+
 fieldset.menu-manufacturers {
   margin-bottom: 3px;
 }
 .filter-option {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding-left: 35px;
 }
 .filter-option label {
@@ -1384,8 +1402,8 @@ fieldset.menu-manufacturers {
   display: block;
 
   cursor: pointer;
-  user-select: none;
 }
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -1394,7 +1412,7 @@ fieldset.menu-manufacturers {
   height: 23px;
 
   left: -35px;
-  top: 0;
+  top: -1px;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -1408,7 +1426,7 @@ fieldset.menu-manufacturers {
   width: 27px;
   height: 23px;
 
-  top: 0px;
+  top: -1px;
   left: -35px;
 
   background-image: url("../img/checkbox-on.svg");
@@ -1465,7 +1483,7 @@ fieldset.menu-manufacturers {
   outline: none;
   padding: 9px 38px 8px;
   color: #000000;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 
@@ -1509,7 +1527,7 @@ fieldset.menu-manufacturers {
   padding-bottom: 10px;
   padding-left: 19px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -1608,7 +1626,8 @@ fieldset.menu-manufacturers {
 .catalog-item {
   border: 1px solid #e5e5e5;
 }
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
   border-color: #ffffff;
 }
@@ -1664,7 +1683,7 @@ fieldset.menu-manufacturers {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1724,12 +1743,23 @@ fieldset.menu-manufacturers {
   opacity: 0.3;
 }
 
-.catalog-item .actions {
-  display: none;
+.actions {
+  display: block;
+  opacity: 0;
 }
 
-.catalog-item:hover .actions {
-  display: block;
+.catalog-item:hover .actions,
+.catalog-item:focus .actions {
+  opacity: 1;
+}
+
+.actions.focus {
+  opacity: 1;
+}
+
+.catalog-item.child-focus {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+  border-color: #ffffff;
 }
 
 .catalog-item .image {
@@ -1743,7 +1773,7 @@ fieldset.menu-manufacturers {
 
 .catalog-item h3 {
   order: 2;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -1755,7 +1785,7 @@ fieldset.menu-manufacturers {
 }
 .item-price-old {
   order: 3;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
@@ -1769,7 +1799,7 @@ fieldset.menu-manufacturers {
 }
 .item-price-now {
   order: 4;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -1815,7 +1845,7 @@ fieldset.menu-manufacturers {
   text-align: center;
   vertical-align: middle;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 36px;
@@ -1872,7 +1902,7 @@ fieldset.menu-manufacturers {
   background-color: #f2f6f8;
 }
 .information-text {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2064,7 +2094,7 @@ fieldset.menu-manufacturers {
   letter-spacing: -0.5px;
 }
 .service-text {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 
@@ -2080,7 +2110,7 @@ fieldset.menu-manufacturers {
   letter-spacing: -0.5px;
 }
 .service-slider-text {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 
@@ -2131,7 +2161,7 @@ fieldset.menu-manufacturers {
   padding-left: 23px;
   padding-right: 10px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
@@ -2270,12 +2300,13 @@ fieldset.menu-manufacturers {
   box-sizing: border-box;
 
   padding: 10px 15px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  color: #a9a9a9;
+  color: #000000;
 
   background-color: #ffffff;
   border: 2px solid #dee3e4;
+  border-radius: 2px;
 }
 .modal-subs-button {
   width: 100%;
@@ -2288,18 +2319,25 @@ fieldset.menu-manufacturers {
   margin-bottom: 10px;
   display: block;
 }
-.modal-subs-container input[type="user-text"] {
+.modal-subs-container input{
   box-sizing: border-box;
   width: 220px;
-  padding: 10px 15px;
+  padding: 8px 15px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  color: #a9a9a9;
+  line-height: 18px;
+  color: #000000;
 
   background-color: #ffffff;
   border: 2px solid #dee3e4;
+  border-radius: 2px;
 }
+.modal-subs-container input::placefolder,
+.modal-subs-container textarea::placefolder {
+  color: #a9a9a9;
+}
+
 /* Окно карты */
 .modal-map {
   display: none;

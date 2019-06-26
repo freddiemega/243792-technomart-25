@@ -28,3 +28,21 @@
         }
       }
     });
+
+
+
+      var linkfocus = document.querySelectorAll(".focus-here");
+      var arr = [].slice.call(linkfocus);
+
+      for (var i = 0, len = arr.length; i < len; i++) {
+
+      arr[i].addEventListener("focus", function() {
+        this.parentElement.classList.add("focus");
+        this.parentElement.parentElement.classList.add("child-focus");
+      });
+      arr[i].addEventListener("blur", function() {
+        this.parentElement.classList.remove("focus");
+        this.parentElement.parentElement.classList.remove("child-focus");
+      });
+
+      }
